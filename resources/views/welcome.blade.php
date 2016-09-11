@@ -22,14 +22,14 @@
                         <li class="list-group-item" v-for="task in list">
                             @{{ task.body }}
 
-                            <button @click="delete(task)" class="btn btn-danger pull-right">Delete</button>
+                            <button @click="deleteTask(task)" class="btn btn-danger pull-right">Delete</button>
                         </li>
                 </ul>
             </template>
         </div>
 
-        <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.8/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.17/vue-resource.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
